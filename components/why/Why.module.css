@@ -1,0 +1,147 @@
+.why{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* background-color: #eceff3; */
+    background-color:var(--theme-bgcolor-3);
+    color: white;
+}
+
+.why_right{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.why_right .right_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 10%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    align-items: center;
+
+    text-align: center;
+    color: black;
+    height: 250px;
+    /* box-shadow: inset 0px 0px 2px #000000, inset -5px -5px 2px #000000; */
+    box-shadow: var(--box-shadow-default);
+}
+
+.why_right .right_div:nth-child(1){
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.why_right .right_div:nth-child(3){
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.right_logo{
+    background-color: var(--color-7);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    font-size: 19px;
+    box-shadow: 2px 2px 12px  #6ab43e;
+    margin-top: 50px;
+}
+
+.why_left{
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.hov_content{
+    font-size: 14px;
+    text-align: start;
+    height: 100%;
+    width: 100%;
+    padding-inline: 5%;
+}
+
+.why_left button{
+    width: 130px;
+    height: 38px;
+    background-color: var(--color-9);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-3);
+}
+
+.why_left button.active{
+    background-color: blue;
+}
+
+.why_left button:hover{
+    box-shadow: var(--hover-box-shadow-3);
+}
+
+.display{
+    display: flex;
+    /* /* justify-content: center; */
+
+    /* padding: 5%; */
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media(max-width: 640px){
+    .why{
+        grid-template-columns: 1fr;
+        padding-block: 10%;
+    }
+
+    .why_right .right_div:nth-child(1){
+        margin: 0px;
+    }
+    
+    .why_right .right_div:nth-child(3){
+        margin: 0px;
+    }
+
+    .why_right{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .right_logo{
+        width: 70px;
+        height: 70px;
+        font-size: 25px;
+    }
+
+    .why_right .right_div p{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .why{
+        grid-template-columns: 1fr;
+        padding-bottom: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .why{
+        grid-template-columns: 1fr;
+        padding-bottom: 10%;
+    }
+}

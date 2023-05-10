@@ -1,0 +1,141 @@
+.contact{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    background-color: var(--color-10);
+}
+
+.contact_left_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 5%;
+}
+
+.contact_left_content h1{
+    font-size: 30px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.location_part{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.location_part_logo{
+    background-color:  var(--theme-color-2);
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 6px;
+    color: var(--default-color);
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 12px var(--theme-color-2);
+}
+
+.location_part_logo:hover{
+    background-color: var(--color-9);
+    box-shadow: 2px 2px 12px var(--color-9);
+}
+
+.location_part_content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.location_part_content p:nth-child(1){
+    font-weight: 600;
+}
+
+.location_part_content p:nth-child(2){
+    color: gray;
+}
+
+.contact_right{
+    padding-block: 10%;
+    z-index: 1000;
+}
+
+.contact_right_content{
+    width: 90%;
+    height: 100%;
+    background-color: var(--theme-bgcolor-3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5% 7%;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-2);
+}
+
+.contact_right_content input{
+    height: 35px;
+    padding: 5%;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact_right_content input:nth-child(4){
+    height: 140px;
+    padding: 5%;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact_right_content input:nth-child(4)::placeholder{
+    position: relative;
+    top: -30%;
+}
+
+.contact_right_content button{
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color-9);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: var(--box-shadow-3);
+}
+
+.contact_right_content button:hover{
+    box-shadow: var(--hover-box-shadow-3);
+}
+
+@media(max-width:640px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact_right_content{
+        width: 100%;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact_right_content{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact_right_content{
+        width: 100%;
+    }
+}

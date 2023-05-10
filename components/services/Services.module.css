@@ -1,0 +1,140 @@
+.main_service{
+    padding: 5%;
+    background-color: #f8f8f8;
+   
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.para{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main_service .heading:hover::after{
+    width: 17%;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.cardbody{
+    border-radius: 4px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    height: 350px;
+    margin-inline: 16px;
+}
+
+.cardText{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: -40px;
+}
+
+
+.cardText p:nth-child(1){
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.para{
+    position: relative;
+}
+
+.para::after{
+    content: "";
+    position: absolute;
+    background-color: var(--theme-color-2);
+    width: 0%;
+    height: 2px;
+    top: 110%;
+    left: 40%;
+    transform: translateX(-25%);
+    transition: all 0.5s ease;
+}
+
+.para:hover::after{
+    width: 40%;
+}
+
+
+.cardLogo{
+    background-color: var(--theme-color-2);
+    color: white;
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    font-size: 26px;
+    box-shadow: 2px 2px 12px var(--theme-color-2)
+}
+
+.cardButton{
+    width: 130px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: -28px;
+    
+} 
+
+.cardButton button{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(163 230 53);
+    border: none;
+    color:black;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(163 230 53);
+}
+
+.cardButton button:hover{
+    box-shadow: 2px 2px 12px rgb(163 230 53);
+} 
+
+
+  
+.carousel{
+    background-color: white;
+    height: 100%;
+    padding: 50px 0px;
+}
+
+.service{
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    margin-top: 50px;
+}
+
+@media (max-width: 640px){
+    .para{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel{
+        height: 100%;
+        padding: 50px 0px;
+    }
+}
