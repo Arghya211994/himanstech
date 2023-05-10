@@ -93,7 +93,7 @@ const CommonPage = ({hero_banner_img, heading,heading_para,overview_head,overvie
                 </div>
 
                 <div className={styles.technology_image}>
-                    <Image src="/MongoDb.png" alt="" height={100} width={100}/>
+                    <Image src="/MongoDB.png" alt="" height={100} width={100}/>
                 </div>
 
                 {/* third-row */}
