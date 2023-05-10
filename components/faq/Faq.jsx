@@ -57,7 +57,7 @@ const Faq = () => {
                     {activeIndex === index && (
                         <motion.section
                         initial={{opacity:0, height:0}}
-                        animate={{opacity:1, height:"160px"}}
+                        animate={{opacity:1, height:"190px"}}
                         exit={{opacity:0, height:0}}
                         className={styles.section}
                         >

@@ -21,7 +21,7 @@ const Header2 = () => {
       {/* logo-start */}
       <Link href="/" className={styles.head}>
         <div className={styles.logo}>
-        <Image src="/Himanstech_logo.svg" alt="" width={250} height={45} />
+        <Image src="/Himanstech_logo.svg" alt="" width={100} height={100} />
         </div>
       </Link>
       {/* logo-end */}
