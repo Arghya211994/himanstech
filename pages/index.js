@@ -10,7 +10,7 @@ import React from 'react'
 const index = () => {
   return (
     <>
-    <Layout title="Himanstech">
+    <Layout title="Digital Marketing Services for Business Growth - Himanstech">
         <Hero/>
         <Services/>
         <Portfolio/>
